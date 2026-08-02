@@ -4,113 +4,133 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Color Trading Hub</title>
+<title>COLOR TRADING HUB</title>
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-background:#0B1220;
-color:#fff;
-text-align:center;
+    background:#020617;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+body:before{
+    content:"";
+    position:fixed;
+    width:500px;
+    height:500px;
+    background:#0066ff;
+    filter:blur(180px);
+    top:-100px;
+    left:-100px;
+    opacity:.5;
+    z-index:-1;
+}
+
+body:after{
+    content:"";
+    position:fixed;
+    width:400px;
+    height:400px;
+    background:#00bfff;
+    filter:blur(180px);
+    bottom:-100px;
+    right:-100px;
+    opacity:.4;
+    z-index:-1;
 }
 
 .container{
-padding:25px;
-max-width:450px;
-margin:auto;
+    width:90%;
+    max-width:420px;
+    margin:auto;
+    padding:30px 0;
+    text-align:center;
 }
 
+/* Logo */
 .logo{
-width:95px;
-height:95px;
-border-radius:50%;
-background:#229ED9;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:40px;
-margin:25px auto;
-box-shadow:0 0 25px rgba(34,158,217,.45);
+    width:90px;
+    height:90px;
+    margin:10px auto 20px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#007bff,#00d4ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+    box-shadow:0 0 30px #008cff;
 }
 
+/* Heading */
 h1{
-font-size:32px;
-margin-bottom:10px;
+    font-size:32px;
+    letter-spacing:1px;
 }
 
-.sub{
-color:#cfd8dc;
-font-size:17px;
-line-height:1.6;
-margin-bottom:30px;
+.tag{
+    color:#b8c7ff;
+    margin:12px 0 25px;
+    font-size:16px;
 }
 
+/* Button */
 .btn{
-display:block;
-background:#229ED9;
-color:#fff;
-padding:18px;
-border-radius:14px;
-font-size:20px;
-font-weight:bold;
-text-decoration:none;
-margin:25px 0;
-transition:.3s;
-box-shadow:0 8px 20px rgba(34,158,217,.35);
+    display:block;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(135deg,#007bff,#00c6ff);
+    padding:16px;
+    border-radius:30px;
+    font-weight:bold;
+    margin:20px 0;
+    box-shadow:0 0 25px #007bff;
+    animation:pulse 2s infinite;
 }
 
-.btn:hover{
-transform:scale(1.03);
+@keyframes pulse{
+    50%{
+        transform:scale(1.05);
+    }
 }
 
+/* Cards */
 .card{
-background:#151E33;
-padding:20px;
-border-radius:18px;
-margin-top:20px;
-text-align:left;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    padding:20px;
+    border-radius:20px;
+    margin:18px 0;
 }
 
-.card h2{
-margin-bottom:15px;
-text-align:center;
+.card h3{
+    color:#00c6ff;
+    margin-bottom:10px;
 }
 
-.item{
-padding:10px 0;
-font-size:17px;
+.card p{
+    color:#ddd;
+    line-height:1.5;
 }
 
-.stats{
-display:flex;
-justify-content:space-between;
-margin-top:20px;
-}
-
-.box{
-background:#1B2640;
-padding:18px;
-width:31%;
-border-radius:14px;
-}
-
-.box h3{
-color:#229ED9;
-font-size:24px;
+/* Telegram */
+.telegram{
+    font-size:45px;
+    margin:15px;
 }
 
 .footer{
-margin:35px 0;
-font-size:13px;
-color:#9aa0a6;
-line-height:1.6;
+    margin-top:30px;
+    color:#aaa;
+    font-size:13px;
 }
 
 </style>
@@ -120,68 +140,55 @@ line-height:1.6;
 
 <div class="container">
 
-<div class="logo">📈</div>
+<div class="logo">
+📈
+</div>
 
-<h1>𝗖𝗢𝗟𝗢𝗥 𝗧𝗥𝗔𝗗𝗜𝗡𝗚 𝗛𝗨𝗕</h1>
+<h1>COLOR TRADING HUB</h1>
 
-<p class="sub">
-Join a growing community of traders.<br>
-Get updates, discussions and trading insights instantly.
+<p class="tag">
+🚀 Premium Trading Community
+<br>
+Join our exclusive Telegram channel
 </p>
 
-<a class="btn"
-href="https://t.me/+kgesO_JFH8cyYjFl">
-🚀 JOIN TELEGRAM
+<a class="btn" href="https://t.me/+kgesO_JFH8cyYjFl">
+🔵 JOIN TELEGRAM CHANNEL
 </a>
+
 
 <div class="card">
-
-<h2>Why Join?</h2>
-
-<div class="item">✅ Active Global Community</div>
-
-<div class="item">📊 Trading Discussions</div>
-
-<div class="item">⚡ Instant Updates</div>
-
-<div class="item">🌍 Members Worldwide</div>
-
-<div class="item">🔒 Free to Join</div>
-
+<h3>🔥 Why Join Us?</h3>
+<p>
+✅ Premium Updates<br>
+✅ Trading Community<br>
+✅ Daily Market Insights<br>
+✅ Fast Information Sharing
+</p>
 </div>
 
-<div class="stats">
 
-<div class="box">
-<h3>24/7</h3>
-<p>Updates</p>
+<div class="card">
+<h3>💎 Premium Experience</h3>
+<p>
+Stay connected with our growing community
+and get exclusive content directly on Telegram.
+</p>
 </div>
 
-<div class="box">
-<h3>Free</h3>
-<p>Access</p>
+
+<div class="telegram">
+✈️
 </div>
 
-<div class="box">
-<h3>Global</h3>
-<p>Community</p>
-</div>
 
-</div>
-
-<a class="btn"
-href="https://t.me/+kgesO_JFH8cyYjFl">
-JOIN NOW
+<a class="btn" href="https://t.me/+kgesO_JFH8cyYjFl">
+JOIN NOW 🚀
 </a>
 
+
 <div class="footer">
-
-© 2026 Color Trading Hub
-
-<br><br>
-
-This community is for informational purposes only. Trading involves risk. Please make your own decisions responsibly.
-
+© 2026 COLOR TRADING HUB
 </div>
 
 </div>

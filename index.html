@@ -5,452 +5,328 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SINGH'S SURE SHOT PANEL</title>
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;
-n.push=n;
-n.loaded=!0;
-n.version='2.0';
-n.queue=[];
-t=b.createElement(e);
-t.async=!0;
-t.src=v;
-s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)
-}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '1779482086400836');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1779482086400836&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
-
+<title>DG Telugu Hub</title>
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
-background:#020604;
-color:white;
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:18px;
-overflow-x:hidden;
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#050505;
+    color:#fff;
+    overflow-x:hidden;
 }
 
-/* BACKGROUND GLOW */
 
-body:before{
-content:"";
-position:fixed;
-width:300px;
-height:300px;
-background:#00ff66;
-filter:blur(150px);
-opacity:.08;
-top:-100px;
-left:-100px;
+/* BACKGROUND */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-2;
+
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(0,110,255,.18),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(0,70,255,.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #070707 0%,
+            #050505 100%
+        );
 }
 
-body:after{
-content:"";
-position:fixed;
-width:300px;
-height:300px;
-background:#00c853;
-filter:blur(150px);
-opacity:.07;
-bottom:-120px;
-right:-100px;
+
+/* MAIN */
+
+.container{
+    width:100%;
+    max-width:520px;
+    margin:auto;
+    padding:28px 16px 35px;
 }
 
-/* MAIN CARD */
-
-.card{
-width:100%;
-max-width:430px;
-background:linear-gradient(
-145deg,
-rgba(12,30,20,.98),
-rgba(3,12,8,.98)
-);
-
-border:1px solid rgba(91,130,42,.65);
-border-radius:28px;
-
-padding:38px 24px 30px;
-
-text-align:center;
-
-position:relative;
-
-box-shadow:
-0 20px 70px rgba(0,0,0,.75),
-0 0 35px rgba(65,140,45,.10);
-
-overflow:hidden;
-
-animation:cardGlow 4s ease-in-out infinite;
-}
-
-@keyframes cardGlow{
-
-0%,100%{
-box-shadow:
-0 20px 70px rgba(0,0,0,.75),
-0 0 30px rgba(65,140,45,.10);
-}
-
-50%{
-box-shadow:
-0 20px 70px rgba(0,0,0,.75),
-0 0 45px rgba(85,170,55,.22);
-}
-
-}
-
-/* TOP LINE */
-
-.top-line{
-width:70px;
-height:4px;
-background:#d8b52d;
-border-radius:10px;
-margin:0 auto 25px;
-box-shadow:0 0 12px rgba(216,181,45,.35);
-}
 
 /* LOGO */
 
 .logo{
-width:125px;
-height:125px;
-margin:auto;
+    width:105px;
+    height:105px;
 
-border-radius:50%;
+    margin:0 auto 22px;
 
-display:flex;
-align-items:center;
-justify-content:center;
+    border-radius:50%;
 
-background:
-radial-gradient(
-circle,
-#164a27 0%,
-#082414 60%,
-#020b06 100%
-);
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-border:4px solid #718d31;
+    background:
+        radial-gradient(
+            circle,
+            #111 0%,
+            #080808 70%,
+            #030303 100%
+        );
 
-box-shadow:
-0 0 0 5px rgba(113,141,49,.08),
-0 0 30px rgba(110,160,50,.25);
+    border:2px solid #168cff;
 
-animation:logoPulse 3s ease-in-out infinite;
+    box-shadow:
+        0 0 18px rgba(0,130,255,.65),
+        0 0 45px rgba(0,90,255,.25);
+
+    font-size:26px;
+    font-weight:900;
+    letter-spacing:1px;
 }
 
-.logo-text{
-font-family:Georgia,serif;
-font-size:38px;
-font-weight:bold;
-letter-spacing:2px;
-color:#e4be35;
-
-text-shadow:
-0 2px 10px rgba(0,0,0,.6);
-}
-
-@keyframes logoPulse{
-
-0%,100%{
-box-shadow:
-0 0 0 5px rgba(113,141,49,.08),
-0 0 25px rgba(110,160,50,.20);
-}
-
-50%{
-box-shadow:
-0 0 0 7px rgba(140,170,55,.10),
-0 0 42px rgba(140,180,55,.42);
-}
-
-}
 
 /* TITLE */
 
-.title{
-margin-top:30px;
+h1{
+    text-align:center;
 
-font-family:Georgia,serif;
+    font-size:34px;
+    line-height:1.1;
 
-font-size:31px;
-line-height:1.15;
+    font-weight:900;
 
-font-weight:bold;
+    margin-bottom:10px;
 
-letter-spacing:1.5px;
+    background:
+        linear-gradient(
+            90deg,
+            #ffffff,
+            #39a5ff
+        );
 
-color:#e4bd35;
+    -webkit-background-clip:text;
+    background-clip:text;
 
-text-shadow:
-0 0 8px rgba(228,189,53,.15);
-
-animation:titleGlow 3s ease-in-out infinite;
+    color:transparent;
 }
 
-@keyframes titleGlow{
-
-0%,100%{
-text-shadow:
-0 0 6px rgba(228,189,53,.15);
-}
-
-50%{
-text-shadow:
-0 0 12px rgba(228,189,53,.45),
-0 0 25px rgba(228,189,53,.18);
-}
-
-}
-
-/* DIVIDER */
-
-.divider{
-width:95px;
-height:3px;
-
-background:#b59a2c;
-
-border-radius:10px;
-
-margin:20px auto;
-
-box-shadow:
-0 0 12px rgba(181,154,44,.25);
-}
-
-/* SUBTITLE */
 
 .subtitle{
-font-size:18px;
-font-weight:bold;
+    text-align:center;
 
-margin-top:5px;
+    color:#a7a7a7;
+
+    font-size:15px;
+
+    line-height:1.5;
+
+    margin-bottom:28px;
 }
 
-.description{
-margin-top:12px;
 
-color:#9aaa9f;
+/* MAIN CARD */
 
-font-size:14px;
+.card{
+    padding:20px;
 
-line-height:1.5;
+    border-radius:20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,25,38,.90),
+            rgba(8,10,15,.95)
+        );
+
+    border:
+        1px solid
+        rgba(40,130,255,.22);
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.45);
+
+    margin-bottom:15px;
 }
 
-/* FEATURE BOX */
 
-.features{
-margin-top:25px;
+/* SECTION */
 
-display:grid;
-grid-template-columns:repeat(3,1fr);
+.section{
+    display:flex;
+    align-items:center;
 
-gap:8px;
+    padding:15px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.06);
 }
 
-.feature{
-padding:13px 5px;
-
-background:rgba(12,35,22,.75);
-
-border:1px solid rgba(95,130,45,.25);
-
-border-radius:12px;
-
-font-size:11px;
-
-color:#c4cec7;
+.section:last-child{
+    border-bottom:none;
 }
 
-.feature strong{
-display:block;
 
-font-size:17px;
+.icon{
+    width:43px;
+    height:43px;
 
-margin-bottom:5px;
+    flex-shrink:0;
 
-color:#e3bd36;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-right:13px;
+
+    border-radius:12px;
+
+    background:
+        rgba(0,115,255,.10);
+
+    border:
+        1px solid
+        rgba(0,130,255,.18);
+
+    color:#1595ff;
+
+    font-size:20px;
 }
 
-/* TELEGRAM BUTTON */
 
-.join{
-display:flex;
-
-align-items:center;
-justify-content:center;
-
-width:100%;
-
-margin-top:30px;
-
-padding:18px 12px;
-
-border-radius:14px;
-
-text-decoration:none;
-
-font-family:Georgia,serif;
-
-font-size:18px;
-
-font-weight:bold;
-
-letter-spacing:1.5px;
-
-color:white;
-
-background:
-linear-gradient(
-135deg,
-#08743a,
-#07552d
-);
-
-border:1px solid #21864b;
-
-box-shadow:
-0 8px 25px rgba(0,130,60,.25);
-
-transition:.25s;
-
-animation:buttonGlow 2.5s ease-in-out infinite;
+.section-text{
+    text-align:left;
 }
 
-.join:hover{
-transform:translateY(-3px);
 
-box-shadow:
-0 12px 35px rgba(0,160,70,.40);
+.section-title{
+    font-size:15px;
+    font-weight:900;
+
+    margin-bottom:4px;
 }
 
-@keyframes buttonGlow{
 
-0%,100%{
-box-shadow:
-0 8px 25px rgba(0,130,60,.22);
+.section-description{
+    color:#858b95;
+
+    font-size:11px;
+
+    line-height:1.4;
 }
 
-50%{
-box-shadow:
-0 8px 32px rgba(0,170,75,.42),
-0 0 18px rgba(0,170,75,.18);
+
+/* BUTTON */
+
+.join-btn{
+    width:100%;
+
+    min-height:62px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    border-radius:15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1598ff,
+            #0878ed
+        );
+
+    color:#fff;
+
+    font-size:18px;
+    font-weight:900;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,110,255,.30);
+
+    transition:.2s ease;
 }
 
+
+.join-btn:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 14px 35px
+        rgba(0,110,255,.45);
 }
 
-.telegram-icon{
-width:27px;
-height:27px;
 
-border-radius:50%;
-
-background:white;
-
-color:#08733a;
-
-display:flex;
-
-align-items:center;
-justify-content:center;
-
-font-size:14px;
-
-margin-right:10px;
+.join-btn:active{
+    transform:scale(.98);
 }
 
-.arrow{
-margin-left:10px;
 
-font-size:20px;
+/* BOTTOM TEXT */
 
-color:#e4bd35;
+.bottom-text{
+    text-align:center;
+
+    margin-top:17px;
+
+    color:#777d87;
+
+    font-size:11px;
+
+    line-height:1.5;
 }
 
-/* NOTE */
-
-.note{
-margin-top:15px;
-
-font-size:11px;
-
-color:#77877d;
-}
 
 /* FOOTER */
 
 .footer{
-margin-top:28px;
+    text-align:center;
 
-padding-top:18px;
+    margin-top:20px;
 
-border-top:1px solid rgba(180,160,50,.12);
+    color:#555b65;
 
-font-size:9px;
-
-letter-spacing:1px;
-
-color:#64746b;
+    font-size:9px;
 }
+
 
 /* MOBILE */
 
-@media(max-width:380px){
+@media(max-width:390px){
 
-.card{
-padding:32px 18px 25px;
-}
+    .container{
+        padding:22px 13px 30px;
+    }
 
-.logo{
-width:110px;
-height:110px;
-}
+    h1{
+        font-size:30px;
+    }
 
-.logo-text{
-font-size:33px;
-}
+    .subtitle{
+        font-size:14px;
+    }
 
-.title{
-font-size:27px;
-}
+    .card{
+        padding:17px;
+    }
 
-.subtitle{
-font-size:16px;
-}
-
-.join{
-font-size:16px;
-}
+    .join-btn{
+        min-height:58px;
+        font-size:17px;
+    }
 
 }
 
@@ -461,89 +337,157 @@ font-size:16px;
 
 <body>
 
-<div class="card">
 
-<div class="top-line"></div>
+<div class="container">
 
 
-<div class="logo">
+    <!-- SAME LOGO STYLE -->
 
-<div class="logo-text">
-SSP
+    <div class="logo">
+        DG
+    </div>
+
+
+    <!-- NAME -->
+
+    <h1>
+        DG TELUGU HUB
+    </h1>
+
+
+    <!-- SUBTITLE -->
+
+    <div class="subtitle">
+        Telugu Members Kosam Premium Community
+        <br>
+        Daily Updates • Exclusive Content
+    </div>
+
+
+    <!-- FEATURES -->
+
+    <div class="card">
+
+
+        <!-- FEATURE 1 -->
+
+        <div class="section">
+
+            <div class="icon">
+                ⚡
+            </div>
+
+            <div class="section-text">
+
+                <div class="section-title">
+                    Fast Updates
+                </div>
+
+                <div class="section-description">
+                    Important updates ni fast ga Telugu lo pondandi
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FEATURE 2 -->
+
+        <div class="section">
+
+            <div class="icon">
+                📊
+            </div>
+
+            <div class="section-text">
+
+                <div class="section-title">
+                    Telugu Insights
+                </div>
+
+                <div class="section-description">
+                    Telugu members kosam useful insights & information
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FEATURE 3 -->
+
+        <div class="section">
+
+            <div class="icon">
+                🔥
+            </div>
+
+            <div class="section-text">
+
+                <div class="section-title">
+                    Exclusive Content
+                </div>
+
+                <div class="section-description">
+                    Community members kosam exclusive updates
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FEATURE 4 -->
+
+        <div class="section">
+
+            <div class="icon">
+                👥
+            </div>
+
+            <div class="section-text">
+
+                <div class="section-title">
+                    Telugu Community
+                </div>
+
+                <div class="section-description">
+                    Mana Telugu community tho connect avvandi
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- TELEGRAM BUTTON -->
+
+    <a
+        class="join-btn"
+        href="https://t.me/+kX0O6mGTDaQ5MTU1"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        ✈️ JOIN TELUGU COMMUNITY
+    </a>
+
+
+    <div class="bottom-text">
+        👆 Button paina tap chesi mana Telegram community lo join avvandi
+    </div>
+
+
+    <div class="footer">
+        DG TELUGU HUB • PREMIUM COMMUNITY
+    </div>
+
+
 </div>
 
-</div>
-
-
-<div class="title">
-SINGH'S<br>
-SURE SHOT PANEL
-</div>
-
-
-<div class="divider"></div>
-
-
-<div class="subtitle">
-Premium Trading Community
-</div>
-
-
-<div class="description">
-Join our exclusive Telegram community
-for regular updates and premium insights.
-</div>
-
-
-<div class="features">
-
-<div class="feature">
-<strong>⚡</strong>
-Fast Updates
-</div>
-
-<div class="feature">
-<strong>📊</strong>
-Market Insights
-</div>
-
-<div class="feature">
-<strong>🔥</strong>
-Premium Access
-</div>
-
-</div>
-
-
-<a
-href="https://t.me/+kX0O6mGTDaQ5MTU1"
-class="join"
->
-
-<span class="telegram-icon">
-➤
-</span>
-
-JOIN TELEGRAM
-
-<span class="arrow">
-➜
-</span>
-
-</a>
-
-
-<div class="note">
-Tap the button above to join our Telegram community
-</div>
-
-
-<div class="footer">
-SINGH'S SURE SHOT PANEL • PREMIUM COMMUNITY
-</div>
-
-
-</div>
 
 </body>
     </html>
